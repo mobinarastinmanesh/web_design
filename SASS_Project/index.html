@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="dist/sass/main.css" rel="stylesheet">
+    <link href="dist/sass/login-signup.css" rel="stylesheet">
+
+    <link href="dist/sass/slider.css" rel="stylesheet">
+    <script src="dist/js/jsfile.js" type="text/javascript" ></script>
+    <script src="dist/js/login-signup.js" type="text/javascript" ></script>
+    <script src="dist/js/slider.js" type="text/javascript" ></script>
+    <link
+            rel="stylesheet"
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+            crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.5.1.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" ></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet">
+</head>
+<body dir="rtl" style="direction: rtl">
+<div id="overlay" >
+    <form>
+        <span class="close" onclick="closeModal()">&times;</span>
+        <!--con=container-->
+        <div class="con">
+            <!--Header-form-->
+            <div class="head-form">
+
+                <h2>ورود</h2>
+                <p>ورود با نام کاربری و رمزعبور</p>
+            </div>
+            <!--End Header Content -->
+
+            <div class="field-set">
+                <!--user name-->
+                <span class="input-item">
+                                    <i class="fa fa-user-circle"></i>
+                                </span>
+                <!--user name input -->
+                <input class="form-input" id="text-input" type="text" placeholder="نام کاربری" required>
+                <br>
+                <!-- password -->
+                <span class="input-item">
+                                    <i class="fa fa-key" ></i>
+                                </span>
+                <!-- Password Input -->
+                <input class="form-input" type="password" placeholder="رمز عبور" id="psw" name="password" required >
+                <!-- Show or hide password -->
+                <span>
+                                    <i class="fa fa-eye" aria-hidden="true" type="password" id="eye" ></i>
+                                </span>
+                <br>
+                <!-- buttons -->
+                <!-- button login -->
+                <button class="log-in"> ورود </button>
+            </div>
+            <!-- other buttons -->
+            <div class="other">
+                <!--Forgot Password button-->
+                <button class="btn submits frgt-pass" >رمز را فراموش کرده اید ؟</button>
+                <!--sign up button -->
+                <button class="btn submits sign-up">ثبت نام
+                    <!--sign up icon -->
+                    <i class="fa fa-user-plus" aria-hidden="true" ></i></button>
+            </div>
+        </div>
+    </form>
+</div>
+<!---------------------------------------------------------------------------------------------------->
+<header id="header-home">
+    <div class="container">
+        <nav  id="main-nav">
+            <ul>
+                <li class="item-nav "><a href="index.html" class="active">خانه</a></li>
+                <li class="item-nav"><a href="articles.html"> مقالات </a></li>
+                <li class="item-nav"><a href="#"> آموزش ها </a></li>
+                <li class="item-nav"><a href="aboutUs.html">  درباره ما </a></li>
+                <li class="item-nav"><a href="contactUs.html"> ارتباط با ما </a></li>
+            </ul>
+
+            <div class="right-nav">
+                <a href="#" class="shopping-cart" style="color: white">
+                    <div class="count">0</div>
+                    <i class="fas fa-shopping-cart fa-2x" ></i>
+                </a>
+            </div>
+        </nav>
+
+        <div class="header-content">
+            <h1 class="my-1">
+                آموزش برنامه نویسی وب
+            </h1>
+            <p class="my-1">
+                آموزش آنلاین تخصصی برنامه نویسی وب، با افتخار بهترین و به روزترین مقالات و فیلم های آموزشی پروژه محور و کاربردی در زمینه برنامه نویسی وب را در اختیار علاقه مندان این حرفه قرار خواهد داد تا بتوانند از این طریق درآمد بیشتری کسب کنند با ما همراه باشید تا گام های تبدیل شدن به توسعه دهنده وب را از مبتدی تا پیشرفته طی کنیم
+            </p>
+
+            <div class="search-box">
+               <span><i class="fas fa-search fa-lg"></i></span>
+                <input type="search" placeholder="دنبال چي ميگردی ؟" />
+            </div>
+            <div class="btn-l-s">
+                <button id="#start" >از کجا شروع کنم ؟  </button>
+                <button id="#login" onclick="log_sign()" >ورود / ثبت نام   </button>
+            </div>
+
+
+        </div>
+
+    </div>
+</header>
+<!--***********************************************************************************************************-->
+<section id="home-1" class="text-center py-3">
+    <div class="home-1-header">
+        <h2>دوره های پیشنهادی </h2>
+        <a href="#" >دوره های آموزشی </a>
+    </div>
+     <div class="slider ">
+         <div class="card" >
+                <div class="img"><a href="#"><img src="dist/img/css.png" /></a> </div>
+                <div class="content">
+                    <h2 class="title">آموزش CSS</h2>
+                    <p>
+                        Css کوتاه شده یا مخفف عبارت Cascading Style Sheets می باشد که قابلیت صفحه آرایی؛
+                      ...
+                    </p>
+                </div>
+             <br>
+             <hr style="color: #4e555b">
+                <div class="footer">
+                    <div class="price">رایگان</div>
+                    <div class="time" ><span > 04:36:10 </span> <i class="fas fa-clock"></i> </div>
+                </div>
+         </div>
+         <div class="card" >
+            <div class="img"><a href="#"> <img src="dist/img/html.png" /></a></div>
+            <div class="content">
+                <h2 class="title">آموزش HTML</h2>
+                <p>
+                    Css کوتاه شده یا مخفف عبارت Cascading Style Sheets می باشد که قابلیت صفحه آرایی؛
+                    ...
+                </p>
+            </div>
+             <br>
+             <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price">رایگان</div>
+                <div class="time" ><span > 04:36:10 </span> <i class="fas fa-clock"></i> </div>
+            </div>
+        </div>
+         <div class="card">
+            <div class="img"><a href="#" > <img src="dist/img/javascripy.jpg" /></a></div>
+            <div class="content">
+                <h2 class="title">آموزش JavaScript</h2>
+                <p>
+                    Css کوتاه شده یا مخفف عبارت Cascading Style Sheets می باشد که قابلیت صفحه آرایی؛
+                   ...
+                </p>
+            </div>
+             <br>
+             <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price">رایگان</div>
+                <div class="time" ><span > 04:36:10 </span> <i class="fas fa-clock"></i> </div>
+            </div>
+        </div>
+         <div class="card" >
+            <div class="img"><a href="#" ><img src="dist/img/seo.jpg" /></a> </div>
+            <div class="content">
+                <h2 class="title">آموزش SEO</h2>
+                <p>
+                    Css کوتاه شده یا مخفف عبارت Cascading Style Sheets می باشد که قابلیت صفحه آرایی؛
+                   ...
+                </p>
+            </div>
+             <br>
+             <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price">رایگان</div>
+                <div class="time" ><span > 04:36:10 </span> <i class="fas fa-clock"></i> </div>
+            </div>
+        </div>
+         <div class="card" >
+             <div class="img"><a href="#"> <img src="dist/img/css.png" /></a></div>
+             <div class="content">
+                  <h2 class="title">آموزش CSS</h2>
+                  <p>
+                     Css کوتاه شده یا مخفف عبارت Cascading Style Sheets می باشد که قابلیت صفحه آرایی؛
+                     ...
+                  </p>
+             </div>
+             <br>
+             <hr style="color: #4e555b">
+             <div class="footer">
+                <div class="price">رایگان</div>
+                <div class="time" ><span > 04:36:10 </span> <i class="fas fa-clock"></i> </div>
+            </div>
+         </div>
+    </div>
+
+</section>
+<!--***********************************************************************************************************-->
+<section id="home-2" class="text-center py-3">
+    <div class="home-2-header">
+        <h2>آخرین مقالات </h2>
+        <a href="#" >تمام مقالات </a>
+    </div>
+    <div class="slider ">
+        <div class="card" >
+            <div class="img"><a href="#"><img src="dist/img/webdeveloper.jpg" /></a> </div>
+            <div class="content">
+                <h2 class="title">توسعه دهنده وب </h2>
+                <p>
+                    فعالیت های توسعه دهند وب بسیار شبیه به طراح وب میباشد اما در عین حال با او تفاوت دارد. بر خلاف یک طراح وب
+                    ...
+                </p>
+            </div>
+            <br>
+            <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price" >مبینا راستین منش</div>
+                <div class="time" ><span >25 </span> <i class="far fa-heart"></i> <span > 45 </span> <i class="fa fa-eye"></i></div>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="img"><a href="#"> <img src="dist/img/webdesigner.jpg" /></a></div>
+            <div class="content">
+                <h2 class="title">طراح وب</h2>
+                <p>
+                    راح وب کسی است که با استفاده از طراحی های تصویری و زیبا تلاش دارد تا به گونه ای درست وب سایت شما را از لحاظ بصری ارتقا بخشد
+                    ...
+                </p>
+            </div>
+            <br>
+            <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price">مبینا راستین منش</div>
+                <div class="time" ><span > 24 </span> <i class="far fa-heart"></i> <span > 52 </span> <i class="fa fa-eye"></i></div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img"><a href="#" > <img src="dist/img/position.jpg" /></a></div>
+            <div class="content">
+                <h2 class="title">پوزیشن ها در CSS3 </h2>
+                <p>
+                    وزیشن ها یک روش برای تغییر مکان عناصر در صفحه هستند. از آنجایی که در طراحی وب دائما درحال تعیین مکان برای عناصر هستیم
+                    ...
+                </p>
+            </div>
+            <br>
+            <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price">مبینا راستین منش</div>
+                <div class="time" ><span >17 </span> <i class="far fa-heart"></i> <span > 35 </span> <i class="fa fa-eye"></i></div>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="img"><a href="article_Browser.html" ><img src="dist/img/br.jpg" /></a> </div>
+            <div class="content">
+                <h2 class="title">مرورگر و موتور جست وجو </h2>
+                <p>
+                    روزانه افراد بسیاری با اینترنت، گوگل و … سر و کار دارند ولی درک درستی از فرق بین مرورگر و موتور جستجو ندارند. به عنوان مثال شما برنامه ای
+                    ...
+                </p>
+            </div>
+            <br>
+            <hr style="color: #4e555b">
+            <div class="footer">
+                <div class="price">مبینا راستین منش</div>
+                <div class="time" ><span > 27 </span> <i class="far fa-heart"></i> <span > 32 </span> <i class="fa fa-eye"></i></div>
+            </div>
+        </div>
+        <div class="card" >
+            <div class="img"><a href="#"> <img src="dist/img/in.png" /></a></div>
+            <div class="content">
+                <h2 class="title">اینترنت چیست؟</h2>
+                <p>
+                    ينترنت مجموعه‌اي جهاني از شبكه‌هاي بزرگ و كوچك است كه به هم پيوسته‌اند و نام اينترنت (شبكه‌هاي در هم تنيده) از همين مجموعه گرفته
+                    ...
+                </p>
+            </div>
+            <br>
+            <hr style="color: #4e555b">
+            <div class="footer">
+
+                <div class="price">مبینا راستین منش</div>
+                <div class="time" ><span > 32 </span> <i class="far fa-heart"></i><span > 50 </span> <i class="fa fa-eye"></i></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--***********************************************************************************************************-->
+<section id="home-3" class="text-center py-1">
+    <div class="items">
+        <div>
+            <ul>
+                <li><i class="fas fas fa-file-alt fa-3x"></i></li>
+                <li class="items-title">مقالات </li>
+                <li id="items-number-1" class="items-number">0</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><i class="fas fa-award fa-3x"></i></li>
+                <li class="items-title">دوره های آموزشی</li>
+                <li id="items-number-2" class="items-number">0</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><i class="fas fa-users fa-3x"></i></li>
+                <li class="items-title">دانشجویان</li>
+                <li id="items-number-3" class="items-number" >0</li>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li><i class="fas fas fa-tv fa-3x"></i></li>
+                <li class="items-title">نمونه کار ها</li>
+                <li id="items-number-4" class="items-number">0</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--***********************************************************************************************************-->
+<section id="home-4" class="text-center py-2">
+    <div class="container">
+        <h2 class="section-title">
+            برنامه نویسی وب
+        </h2>
+        <p>
+            آموزش های مارا دنبال کنید تا به یک توسعه دهنده وب حرفه ای تبدیل شوید
+        </p>
+        <div class="process">
+            <div>
+                <a href="#">
+                    <i class="fas fa-file-alt fa-4x process-icon my-2">
+
+                        <div class="process-step">1</div>
+                    </i>
+                    <h3>HTML&CSS</h3>
+                    <p>
+     مقالات و دوره های آموشی HTML  و CSS از پایه تا پیشرفته
+                     </p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fas fa-keyboard fa-4x process-icon my-2">
+                        <div class="process-step">2</div>
+                    </i>
+                    <h3>JavaScript</h3>
+                    <p>
+                        آموزش 0 تا 100 جاوا اسکریپت به همراه فریم ورک های معروف
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fas fas fa-tv fa-4x process-icon my-2">
+                        <div class="process-step">3</div>
+                    </i>
+                    <h3>PHP</h3>
+                    <p>
+                        آموزش بک اند با PHP و کتابخانه های مورد نیاز
+                    </p>
+                </a>
+            </div>
+            <div>
+                <a href="#">
+                    <i class="fas fa-database fa-4x process-icon my-2">
+                        <div class="process-step">4</div>
+                    </i>
+                    <h3>DataBase</h3>
+                    <p>
+                        هر آنچه لازم از پایگاه داده ها بدانید
+
+                    </p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-content">
+        <div class="container">
+            <div class="row" >
+                <div class="f-col-1">
+                    <h2>بخش های سایت</h2>
+                    <hr class="f-break">
+                    <ul>
+                        <li>دوره های آموزشی</li>
+                        <li>مقالات </li>
+                        <li> درباره ما</li>
+                        <li> قوانین و مقررات</li>
+                    </ul>
+                </div>
+                <div class="f-col-2">
+                    <h2>ارتباط با ما</h2>
+                    <hr class="f-break">
+                    <ul>
+                        <li><i class="fas fa-map-marker-alt"></i>تهران - مرزداران </li>
+                        <li><i class="fas fa-phone"></i>0912222222</li>
+                        <li><i class="far fa-paper-plane"></i>webprogramming@</li>
+                        <li><i class="far fa-envelope-open"></i>webprogramming@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="f-col-3">
+                    <div class="social">
+                        <a href="#"><i class="fab fa-twitter fa-2x" title="twitter"></i></a>
+                        <a href="#"><i class="fab fa-facebook fa-2x" title="facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest fa-2x" title="pinterest"></i></a>
+                        <a href="#"><i class="fab fa-instagram fa-2x" title="instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin fa-2x" title="linkedin"></i></a>
+                        <a href="#"><i class="fab fa-telegram fa-2x" title="telegram"></i></a>
+                        <a href="#"><i class="fab fa-git fa-2x" title="git"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="f-footer">
+                <p>کليه حقوق محصولات و محتوای اين سایت متعلق به WebProgramming.ir می باشد و هر گونه کپی برداری از محتوا و محصولات سایت غیر مجاز و بدون رضایت ماست</p>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

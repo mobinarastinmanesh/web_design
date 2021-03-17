@@ -1,0 +1,24 @@
+.App {
+  text-align: center;
+}
+nav{
+  background-color: darkgray;
+  color: rgb(19, 8, 8);
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul{
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: space-evenly;
+  list-style:  none;
+}
+nav ul li{
+  padding: 10px;
+ font-weight: bold;
+}
+nav ul li:hover{
+  background-color: wheat;
+  color: black;
+}

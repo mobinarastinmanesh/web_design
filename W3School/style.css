@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face{
+	font-face:font1;
+	src : url('Tanha-FD.ttf');
+}
+/*@font-face{*/
+/*	font-face:font2;*/
+/*	src: url('../fonts/BZar.tff');*/
+
+/*}*/
+body {
+  margin: 0;
+  font-family: font2; 
+}
+#h1d{
+	color : rgb(70,70,70) ;
+	text-align :center ;
+	margin : 20px 0 0 0;
+}
+#h4d{
+	text-transform : uppercase ;
+	font-weight : 100;
+	letter-spacing : 5px ;
+	text-align :center ;
+	margin : 10px ;
+	display: block;
+}
+/*************************************************************/
+div.nav{
+	width : 100%;
+	height : 60px;
+	box-shadow : 2px 2px 10px gray ;
+	background-color : rgba(40,200,0,0.8) ;
+}
+/*************************************************************/
+#ulnav{
+	list-style-type : none ;
+	background-color : rgba(40,200,0,0.8) ;
+	padding : 0 ;
+}
+
+[class*="itemnav-"] {
+  text-align :center;
+  width :200px;
+  height :auto;
+  padding :20px ;
+  float :left ;
+  color : white ;
+  display: none;
+}
+.itemnav-1 {
+  width :60px;
+  display: block;
+}
+[class*="itemnav-"]:hover{
+	background-color : white ;
+	color : black ;
+}
+
+/*********************************************************/
+div.menu{
+    float : left ; 
+	height : 6500px ;
+	padding : 0 ;
+	box-shadow : 2px 2px 10px gray ;
+	display: none;
+}
+/**********************************************/
+.ulmenu{
+	list-style-type: none ;
+	padding : 0 ;
+	margin : 0 ;
+}
+.itemmenu{
+	width : 100%;
+}
+/**********************************************/
+a.amenu {
+	display :block;
+	text-decoration : none ;
+	color : black ;
+	padding : 8px 0px 8px 16px;
+	
+}
+a.amenu:hover{
+	background-color : lightgray ;
+}
+/****************************************************/
+a.htmlbutton{
+  text-decoration: none;
+  background-color: darkgray;
+  color: white;	
+  padding: 20px;
+}
+a.htmlbutton:hover{
+	background-color : lightgray ;
+	color : darkgray ;
+}
+/*************************************************************/
+span.colorbrown{
+	color : rgb(206,26,66) ;
+}
+span.colorgreen{
+	color : green ;
+}
+span.colorwhite{
+	color :white ;
+}
+span.colorpurple{
+	color :purple ;
+}
+/***********************************************************************/
+a.try{
+	text-decoration :none ;
+	padding : 20px;
+	margin : 30px ;
+	background-color :  rgba(40,200,0,0.8);
+	color : white ;	
+	
+}
+/*********************************************************************/
+.linklearning{
+	text-decoration:none;
+	background-color: rgb(75,75,75);
+	color: white ;
+	padding: 10px 30px;
+	position:center;
+	border-radius:5px;
+	
+	
+}
+.linklearning:hover{
+	background-color : white ;
+	color :rgb(75,75,75) ;
+	
+}
+/***********************************************************************/
+.im-linkexercises {
+  color:white;
+  text-decoration : none;
+  background-color: rgba(40,200,0,0.8);
+  padding : 10px 40px;
+  display : block;
+  margin : 10px;
+}
+.linkexercises {
+  color:white;
+  text-decoration : none;
+  background-color: rgba(40,200,0,0.8);
+  padding : 10px 20px;
+  margin-top : 10px;
+  display :none;
+  /*display : inline-table;*/
+}
+.linkexercises:hover {
+  box-shadow: 0px 0px 10px gray;	
+}
+/*********************************************************************/
+.row {
+	padding :15px ;
+	font-family: font2;
+	float: right;
+	width: 100%;
+	
+}
+.row::after {
+  content: "";
+  clear: both ;
+}
+	
+[class*="course"] {
+  text-align: center;
+  padding:20px;
+  
+  width: 100%;
+  float :left;
+  background-color : white ;
+ 
+}
+
+
+[class*="example"] {
+  box-shadow: 2px 2px 10px darkgray;
+  height: 450px;
+  width: 100%;
+  float: left ;
+  background-color: lightgray;
+  border-radius: 10px; 
+  display: none;
+}	
+[class*="learning-"] {
+  float:left;
+  width:100% ;
+  background-color: rgb(75,75,75);
+  height:auto ;
+  padding : 30px 30px 0px 30px;
+}
+.frame1 {
+	width:100%;
+	height:300px;
+	float:left;
+	margin-bottom:30px;
+	border :5px solid rgba(75,75,75,0.5);
+}	
+
+/**********************************************************************/
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-t-1 {width: 8.33%;}
+  .col-t-2 {width: 16.66%;}
+  .col-t-3 {width: 25%;}
+  .col-t-4 {width: 33.33%;}
+  .col-t-5 {width: 41.66%;}
+  .col-t-6 {width: 50%;}
+  .col-t-7 {width: 58.33%;}
+  .col-t-8 {width: 66.66%;}
+  .col-t-9 {width: 75%;}
+  .col-t-10 {width: 83.33%;}
+  .col-t-11 {width: 91.66%;}
+  .col-t-12 {width: 100%;}
+  .itemnav-1 {display :block;}
+  [class*="example"] {display :block;}
+  .linkexercises{display: inline-table;}
+}
+@media only screen and (min-width: 768px) {
+  /* For Big tablets: */
+  .col-bt-1 {width: 8.33%;}
+  .col-bt-2 {width: 16.66%;}
+  .col-bt-3 {width: 25%;}
+  .col-bt-4 {width: 33.33%;}
+  .col-bt-5 {width: 41.66%;}
+  .col-bt-6 {width: 50%;}
+  .col-bt-7 {width: 58.33%;}
+  .col-bt-8 {width: 66.66%;}
+  .col-bt-9 {width: 75%;}
+  .col-bt-10 {width: 83.33%;}
+  .col-bt-11 {width: 91.66%;}
+  .col-bt-12 {width: 100%;}
+  div.menu {display: block;}
+  .itemnav-1 {display :none;}
+  .itemnav-2 {display :block;}
+  .itemnav-3 {display :block;}
+  .itemnav-4 {display :block;}
+  
+}
+@media only screen and (min-width: 1040px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+  div.menu {display: block;}
+  .itemnav-1 {display :none;}
+  .itemnav-2 {display :block;}
+  .itemnav-3 {display :block;}
+  .itemnav-4 {display :block;}
+  .itemnav-5 {display :block;}
+  
+}

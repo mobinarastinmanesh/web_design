@@ -1,0 +1,62 @@
+body{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%) ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+.search-form{
+    padding: 20px 50px;
+  
+  
+}
+.app {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+    border: 1px solid black;
+    width: 100%;
+    height: 50px;
+}
+.app input{
+    width: 100%;
+    height: auto;
+ 
+    outline: none;
+    /* border: 1px solid black; */
+   
+}
+
+.app .search-button{
+    background-color: lightpink;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    /* border-left: 1px  solid black; */
+    width: 150px;
+}
+.app .search-button:hover{
+    background-color: darksalmon;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+.recipies{
+    display: flex;
+    flex-wrap: wrap;
+}
+.recipe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    padding:2% 1%;
+    background-color: white;
+    box-shadow: 1px 1px 10px lightslategray ;
+    margin: 10px 8px;
+    
+}
+.recipe img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10%;
+}

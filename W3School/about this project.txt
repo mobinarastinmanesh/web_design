@@ -1,0 +1,1 @@
+a simple project with HTML,CSS,mediaquery

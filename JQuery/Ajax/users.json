@@ -1,0 +1,32 @@
+[
+{
+    "firstname" : "mobina" ,
+    "lastname" : "rastin" ,
+    "age" : 21 ,
+    "email" : "aa@gmail.com" 
+},
+{
+    "firstname" : "ali" ,
+    "lastname" : "alavi" ,
+    "age" : 22 ,
+    "email" : "bb@gmail.com" 
+},
+{
+    "firstname" : "darya" ,
+    "lastname" : "noori" ,
+    "age" : 43 ,
+    "email" : "cc@gmail.com" 
+},
+{
+    "firstname" : "sima" ,
+    "lastname" : "razavi" ,
+    "age" : 12 ,
+    "email" : "dd@gmail.com" 
+},
+{
+    "firstname" : "sina" ,
+    "lastname" : "moradi" ,
+    "age" : 52 ,
+    "email" : "ee@gmail.com" 
+}
+]

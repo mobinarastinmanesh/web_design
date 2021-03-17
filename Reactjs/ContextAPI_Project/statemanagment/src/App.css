@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.nav{
+  background-color: darkblue;
+  display: flex;
+  justify-content: space-evenly;
+  color: white;
+  
+}
+.movie{
+  
+  border: 2px solid black;
+  margin: 10px;
+
+}
+.movie h3{
+  background-color: lightcoral;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.movie p{
+  background-color: rgb(142, 217, 247);
+  padding: 10px 0;
+  margin: 0 auto;
+
+}
+.addmovies{
+  padding: 10px 5px;
+  display: flex ;
+  justify-content: center;
+  align-items: baseline;
+}
+.addmovies input{
+  outline: none;
+  margin-left: 5px;
+  height: 20px;
+}
+.addmovies button{
+  background-color: palevioletred;
+  color: darkblue ;
+  margin-left: 5px;
+  padding: 10px ;
+  border:  none;
+  border-radius: 10%;
+}

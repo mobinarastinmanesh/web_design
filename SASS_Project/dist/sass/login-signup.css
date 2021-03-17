@@ -1,0 +1,137 @@
+@font-face {
+  font-family: "Tanha";
+  src: url("../font/parastoo.ttf");
+}
+@font-face {
+  font-family: "dastnevis";
+  src: url("../font/Far_DastNevis.otf");
+}
+#overlay {
+  display: none;
+  height: 600px;
+  align-content: center;
+  padding: 5%;
+  background: linear-gradient(rgba(20, 20, 20, 0.5), rgba(20, 20, 20, 0.5)), url(../img/background1.jpg) no-repeat center center/cover;
+  z-index: 5;
+}
+#overlay .close {
+  font-weight: bolder;
+  font-size: 30px;
+  margin-right: -55px;
+  cursor: pointer;
+  float: right;
+}
+
+form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  padding: 2% 10%;
+  background-image: linear-gradient(-200deg, #E3FDF5 50%, #FFE6FA 50%);
+}
+
+form .con {
+  margin: 10px 0;
+}
+
+.head-form {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+.head-form h2 {
+  font-size: 250%;
+  font-family: "Tanha";
+  color: black;
+}
+.head-form p {
+  letter-spacing: 0.05em;
+}
+
+.field-set {
+  padding-right: 20%;
+}
+.field-set .input-item {
+  background-color: #fff;
+  color: black;
+  padding: 4px 8px 6px 8px;
+  font-size: large;
+  border-radius: 0 5px 5px 0;
+}
+.field-set #eye {
+  background-color: #fff;
+  color: black;
+  margin: 6px 0 0 0;
+  margin-right: -5px;
+  padding: 10px 8px 15px 8px;
+  border-radius: 5px 0 0 5px;
+  cursor: pointer;
+}
+.field-set .form-input {
+  width: 200px;
+  height: 40px;
+  padding-right: 5px;
+  margin: -1px;
+  border: none;
+  outline: none;
+  color: #5E6472;
+  font-family: "Tanha";
+  border-radius: 0;
+  right: 5%;
+  transition: 0.2s linear;
+}
+.field-set #text-input {
+  width: 230px;
+  border-radius: 5px 0 0 5px;
+}
+.field-set input:focus {
+  transform: translateX(-2px);
+  margin-right: -2px;
+}
+.field-set button {
+  display: inline;
+  color: #252537;
+  width: 280px;
+  height: 45px;
+  padding: 0 10px;
+  background-color: #dedcdc;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  margin: 8% 0;
+  cursor: pointer;
+  transition: 0.2s linear;
+  letter-spacing: 0.05em;
+  font-family: "Tanha";
+}
+.field-set button:hover {
+  transform: translateY(3px);
+}
+
+.other {
+  padding-right: 25%;
+}
+.other .submits {
+  font-family: "Tanha";
+  width: 30%;
+  height: 40px;
+  display: inline;
+  margin-left: 2%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+.other .frgt-pass {
+  background: transparent;
+}
+.other .sign-up {
+  background: #B8F2E6;
+}
+.other button:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+  border: none;
+}
+
+/*# sourceMappingURL=login-signup.css.map */

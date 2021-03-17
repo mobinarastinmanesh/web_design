@@ -1,0 +1,59 @@
+/* Variabes */
+/* Mixin's */
+body {
+  background: #f18d9e;
+  height: 100%;
+}
+
+.wrapper {
+  width: 900px;
+  padding-top: 70px;
+  background-color: #ff0059;
+  margin: 100px auto;
+  color: #fff;
+  border-style: groove;
+  box-shadow: 2px 2px 30px 20px #ec8398 inset;
+  border-radius: 50px;
+  height: 300px;
+  text-align: center;
+  font-family: Arial;
+}
+
+h1, h3 {
+  font-family: "sans-serif";
+  font-weight: 100;
+  font-size: 2.9em;
+  text-transform: uppercase;
+}
+
+#seconds, #tens, #minutes {
+  font-size: 2.3em;
+  font-family: "sans-serif";
+}
+
+button {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+  background: #f18d9e;
+  color: #fff;
+  border: solid 1px #fff;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+button:hover {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  background: #fff;
+  border: solid 1px #fff;
+  color: #ff0059;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+     rel="stylesheet">
+    <link rel="shortcut icon" href="images/icon.png"  type="image/x-icon" >
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"> 
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
+    crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./style.css" >
+</head>
+<body>
+<!--************************************** Header **********************************************-->
+  <header id="header" class="header">
+    <div class="navigation">
+      <div class="container">
+        <!--------------------All Navigation------------------------>
+        <nav class="nav fix__nav"> 
+          <!------------------------------------------>
+          <div class="nav__hamburger">
+            <i class="fas fa-bars"></i>
+          </div>
+          <!------------------------------------------>
+          <div class="nav__logo">
+            <a href="/" class="scroll-link">
+              PHONE
+            </a>
+          </div>
+          <!------------- Navigation ----------------->
+          <div class="nav__menu">
+          <!----Close Button---->
+            <div class="menu__top">
+              <span class="nav__category">PHONE</span>
+              <a href="#" class="close__toggle">
+               <i class="fa fa-times" ></i>
+              </a>
+            </div>
+          <!----Navigation Item---->
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a href="#header" class="nav__link scroll-link">Home</a>
+              </li>
+              <li class="nav__item">
+                <a href="#category" class="nav__link scroll-link">Category</a>
+              </li>
+              <li class="nav__item">
+                <a href="#news" class="nav__link scroll-link">Blog</a>
+              </li>
+              <li class="nav__item">
+                <a href="#contact" class="nav__link scroll-link">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!----------------Icons-------------------->
+          <div class="nav__icons">
+            <a href="#" class="icon__item">
+              <div class="icon__user">
+                <i class="fa fa-user"></i>
+              </div>
+            </a>
+
+            <a href="#" class="icon__item">
+              <div class="icon__search">
+                <i class="fa fa-search"></i>
+              </div>
+            </a>
+
+            <a href="#" class="icon__item">
+              <i class="fas fa-shopping-basket"></i>
+              <span id="cart__total">0</span>
+            </a>
+          <!----------------------------------------->
+          </div>
+        </nav>
+      </div>
+    </div>
+
+<!--******************************************* Hero *******************************************-->
+    <div class="hero">
+      <!--from glidejs.com -->
+      <div class="glide" id="glide_1">
+        <div class="glide__track" data-glide-el="track">
+          <ul class="glide__slides">
+            <li class="glide__slide">
+      <!------------------ -->        
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span>New Inspration 2010</span>
+                  <h1>PHONE MADE FOR YOU!</h1>
+                  <p>Trandong from mobile and headphone style colltion</p>
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+                <div class="hero__right">
+                  <div class="hero__image-container">
+                    <img src="./images/banner_01.png" alt="" class="banner_01">
+                  </div>
+                </div>
+              </div>
+            </li> 
+            <li class="glide__slide">
+              <div class="hero__center">
+                <div class="hero__left">
+                  <span>New Inspration 2010</span>
+                  <h1>PHONE MADE FOR YOU!</h1>
+                  <p>Trandong from mobile and headphone style colltion</p>
+                  <a href="#"><button class="hero__btn">SHOP NOW</button></a>
+                </div>
+                <div class="hero__right">
+                  <div class="hero__image-container">
+                    <img src="./images/banner_02.png" alt="" class="banner_02">
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- from glidejs.com --> 
+        <div class="glide__bullets" data-glide-el="controls[nav]">
+          <button class="glide__bullet" data-glide-dir="=0"></button>
+          <button class="glide__bullet" data-glide-dir="=1"></button>       
+        </div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fas fa-angle-double-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fas fa-angle-double-right"></i>
+          </button>
+        </div>
+        <!------------------------>
+      </div>
+    </div>
+ </header> 
+<!-- End Header -->
+    <!-- AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<!--glidejs-->    
+<script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+<!--custom Js-->
+<script src="js/index.js"></script>
+<script src="js/products.js"></script>
+<script src="js/slider.js"></script>
+
+</body>
+</html>

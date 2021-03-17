@@ -1,0 +1,51 @@
+.slider {
+  overflow: hidden;
+  max-width: 1500px;
+  padding: 0 30px;
+}
+.slider .card {
+  box-shadow: 1px 2px 8px 1px #6c757d;
+  margin: 35px 45px 35px 45px;
+  background-color: white;
+  float: none;
+  width: 80%;
+}
+.slider .card:hover {
+  transform: scale(1.1);
+}
+.slider .card .title {
+  text-align: right;
+  padding: 3% 1%;
+  color: #333333;
+  font-weight: initial;
+  margin-top: 0;
+  font-size: 20px;
+}
+.slider .card .content {
+  padding: 4% 4%;
+  text-align: right;
+  background-color: white;
+  color: #6c757d;
+}
+.slider .card .footer {
+  justify-content: space-between;
+  display: flex;
+  padding: 3% 4%;
+  margin-top: 5px;
+  margin-bottom: 0;
+  background-color: white;
+  font-weight: bold;
+}
+.slider .card .footer .price {
+  color: #d9163a;
+}
+.slider .card .footer .time {
+  color: #0069d9;
+}
+.slider .card .img img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/*# sourceMappingURL=slider.css.map */

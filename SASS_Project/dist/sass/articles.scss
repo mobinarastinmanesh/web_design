@@ -1,0 +1,57 @@
+@import 'fonts' ;
+@import "variables";
+@import "functions";
+@import "utilities";
+
+.uk{
+  &-container{
+    display: flex;
+    //justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    //padding: 10px 300px;
+    padding: 10px ;
+    img{
+      //display: none;
+      width: 270px;
+      height: 200px;
+    }
+    h1 {
+      color: crimson;
+      text-align: center;
+    }
+    h2 {
+      color: crimson;
+      text-align: center;
+      font-weight: initial;
+    }
+    button{
+      border: none;
+      background-color: white;
+      font-size: 20px;
+    }
+    input{
+
+      width: 250px;
+      border-left: none;
+      border-top: none;
+      border-right: none;
+      border-bottom :2px solid #c17583;
+      font-family: $font-family-tanha;
+      padding: 2%;
+      margin-top: 10px;
+      text-align: center;
+      outline : none ;
+      &:hover{
+        border-color: crimson;
+
+      }
+    }
+  }
+}
+.articles{
+  background-color: #eee;
+  height: 500px;
+}
+@import "mediaQ";

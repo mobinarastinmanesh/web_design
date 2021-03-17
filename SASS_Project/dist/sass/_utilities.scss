@@ -1,0 +1,264 @@
+//کلاس های کابردی
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-family: $font-family-tanha ;
+  line-height: 1.6 ;
+  background: rgba(0, 0, 0, 0);
+}
+a{
+  text-decoration: none;
+}
+.container{
+  max-width: $website-width ;
+  padding: 0 0.5rem;
+  margin: auto;
+  overflow: hidden;
+  &-1{
+    padding: 0 1rem;
+    margin: 5px  0px ;
+  }
+}
+.text-primary{
+  color : $primary-color ;
+}
+// Padding
+.py {
+  &-0{
+    padding: 0.5rem 0;
+  }
+  &-1 {
+    padding: 1rem 0;
+  }
+  &-2 {
+    padding: 2rem 0;
+  }
+  &-3 {
+    padding: 3rem 0;
+  }
+  &-4 {
+    padding: 4rem 0;
+  }
+}
+
+// Margin
+.my {
+  &-1 {
+    margin: 1rem 0;
+  }
+  &-2 {
+    margin: 2rem 0;
+  }
+  &-3 {
+    margin: 3rem 0;
+  }
+  &-4 {
+    margin: 4rem 0;
+  }
+}
+%btn-shared{
+  display: inline-block;
+  padding: 0.5rem 1.5rem;
+  transition: all 0.5s;
+  border:  none;
+  cursor: pointer;
+}
+.btn{
+  &-light{
+    @extend %btn-shared ;
+    background-color: white;
+    color: #333333;
+  }
+
+}
+.text-center{
+  text-align: center;
+}
+
+button[class^="btn-"]:hover,
+a[class^="btn-"]:hover{
+  background-color: #333333;
+  color: white;
+}
+
+//Navigation bar Except Home
+#header-others {
+  height: 60px;
+  color: #dedcdc;
+  background-color: #333333;
+  text-align: center;
+  font-size: 1.0rem;
+  //line-height: 2.5rem;
+}
+
+#others-nav {
+  display: flex;
+  justify-content: space-between;
+  ul{
+    display: flex;
+    align-content: center;
+    list-style: none;
+  }
+  .item-nav {
+    margin: 2px 0 2px -25px;
+    padding: 1rem 1.5rem 2rem 1.5rem;
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: 3px transparent solid;
+      border-top: 3px transparent solid;
+      padding-top: 0.7rem;
+      padding-bottom: 0.7rem;
+
+      @include transition(border-color, 0.5s);
+      &:hover {
+        border-color: $medium-color;
+      }
+      &.active {
+        border-color: white;
+      }
+    }
+  }
+  .right-nav {
+   margin-top: 20px;
+    padding-left: 10px;
+    text-align: center;
+    .shopping-cart {
+      display: flex;
+      flex-direction: column;
+      align-content: space-evenly;
+        i{
+          font-size: 28px;
+          padding-bottom: 10px;
+        }
+        .count {
+          top: 0;
+          right: 0;
+          font-family: "Nirmala UI";
+          font-size: 10px;
+          font-weight: bolder;
+          background: #d9163a;
+          color: white;
+          border-radius: 50%;
+          height: 17px;
+          width: 17px;
+          text-align: center;
+          padding: -3px 1px 8px 1px;
+          margin-bottom: 0 ;
+          margin-top: -15px;
+        }
+
+        &:hover {
+          //font-size: 1.1em;
+          text-decoration: none;
+        }
+      }
+
+  }
+}
+/* breadcrumb */
+ul.breadcrumb {
+  padding: 5px 8px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 15px;
+  padding-right: 4px;
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #1c4d74;
+  text-decoration: none;
+  &:hover{
+    color: #01447e;
+    text-decoration: none;
+  }
+}
+
+// Footer
+.footer-content {
+  background: $dark-color;
+  color: #fff;
+  height: auto;
+
+  .container {
+    padding: 5% 10%;
+  }
+
+  .f-break {
+    width: 140px;
+    color: #a0c6e5;
+    margin: 10px 0;
+  }
+
+  .row {
+    //display: flex;
+    //justify-content: space-between;
+
+    a {
+      text-decoration: none;
+    }
+
+    h2 {
+      font-size: 20px;
+      font-weight: normal;
+
+    }
+
+    ul {
+      list-style: none;
+      flex-direction: column;
+      margin-bottom : 50px;
+      li:hover {
+        transform: translateX(2px);
+      }
+    }
+
+    i {
+      padding: 8px;
+    }
+
+    .f-col {
+      //display: block;
+      width: 100%;
+      margin-right: -100px;
+      &-2{
+        ul li{
+          padding: 1px;
+        }
+      }
+      &-3 {
+        float: left;
+        .social {
+          color: white;
+
+          a {
+            color: white;
+            height: 20px;
+            width: 20px;
+
+          }
+        }
+      }
+
+    }
+  }
+
+  .f-footer {
+    text-align: center;
+    padding-top: 60px;
+    margin-top: 2%;
+    padding-bottom: 5px;
+    font-size: 15px;
+    color: rgba(236, 231, 231, 0.71);
+  }
+}
+
+
