@@ -1,0 +1,53 @@
+body{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.navbar{
+  background-color: lightcoral;
+  font-size: 30px;
+  padding: 10px;
+}
+.badge{
+  margin: 12px;
+  background-color: orange;
+  padding: 5px;
+  border-radius:10%;
+}
+.items{
+  display: flex;
+  background-color: lightsteelblue;
+  padding: 10px;
+}
+.numb{
+  margin: 12px;
+  background-color: yellow;
+  padding: 15px;
+  border-radius:10%;
+
+}
+.items button {
+  padding:  0  15px ;
+  margin-left: 5px;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+}
+.dlt_btn{
+  background-color: rgb(231, 0, 0);
+  color: white;
+  border : none ;
+}
+.dlt_btn:hover{
+  background-color: rgb(255, 177, 177);
+  color: rgb(0, 0, 0);
+  border : none ;
+}
+.inc_btn{
+  background-color: rgb(16, 173, 16);
+  color: white;
+  border : none ;
+}
+.inc_btn:hover{
+  background-color: rgb(174, 115, 241);
+  color: rgb(0, 0, 0);
+  border : none ;
+}
