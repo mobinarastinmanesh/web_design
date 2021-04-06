@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6171490e-f883-4882-b857-ed168a0c61c9" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../ShoppingCart_Project/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingCart_Project/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShoppingCart_Project/css/Cart.css" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingCart_Project/css/Cart.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShoppingCart_Project/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingCart_Project/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../ShoppingCart_Project/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingCart_Project/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Reactjs/COVID-19 Tracker Application/covid19trackerapplication" beforeDir="false" afterPath="$PROJECT_DIR$/../Reactjs/COVID-19 Tracker Application/covid19trackerapplication" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +35,8 @@
       <option name="presentableId" value="Default" />
       <updated>1614280656065</updated>
       <workItem from="1614280667229" duration="8000" />
+      <workItem from="1617728309951" duration="14000" />
+      <workItem from="1617732116733" duration="13000" />
     </task>
     <servers />
   </component>
