@@ -1,0 +1,13 @@
+body{
+  background-color: rgb(250, 250, 250);
+}
+ .container{
+   margin-top: 50px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ }
+ .title{
+   width:350px;
+   height: 100px;
+ }
